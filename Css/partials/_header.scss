@@ -1,0 +1,22 @@
+.header {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  background-color: black;
+
+  .nav-link {
+    font-size: 21px;
+    color: #f3f3f3;
+    &:hover {
+      color: #d4ac0d;
+    }
+    &:active {
+      color: #d4ac0d;
+    }
+  }
+  img {
+    height: 9em;
+  }
+  .navbar-toggler-icon {
+    background-image: url("/Img/crossbones.png");
+  }
+}
