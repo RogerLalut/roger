@@ -18,6 +18,7 @@
 }
 .header .navbar-toggler-icon {
   background-image: url("../Img/crossbones.png");
+  background-image: url("./Img/crossbones.png");
 }
 
 .contenedor {
