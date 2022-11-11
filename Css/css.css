@@ -27,49 +27,45 @@
 .contenedor .separador {
   height: 1em;
   background-image: url("../../Img/separador-kada-01-2.svg");
-}
-.contenedor .separador .separador {
-  height: 1em;
-  background-image: url("Img/separador-kada-01-2.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.contenedor .separador .container {
+.contenedor .container {
   margin-top: 5em;
 }
-.contenedor .separador .container .encabezado {
+.contenedor .container .encabezado {
   color: #D4AC0D;
 }
-.contenedor .separador .container .encabezado img {
+.contenedor .container .encabezado img {
   height: 50px;
   margin-bottom: 20px;
 }
-.contenedor .separador .container .fin {
+.contenedor .container .fin {
   color: #C0392B;
   text-align: center;
   margin: 1em;
 }
-.contenedor .separador .row1 {
+.contenedor .row1 {
   margin-top: 3em;
   text-align: center;
   background: rgba(46, 64, 83, 0.5);
   color: white;
 }
-.contenedor .separador .row1 .container-cartas {
+.contenedor .row1 .container-cartas {
   display: flex;
   justify-content: space-between;
   margin-top: 1em;
   padding-bottom: 1em;
 }
-.contenedor .separador .row1 .container-cartas .card {
+.contenedor .row1 .container-cartas .card {
   background: rgba(46, 64, 83, 0.5);
 }
-.contenedor .separador .carousel-inner img {
+.contenedor .carousel-inner img {
   width: 100%;
   height: 10em;
 }
-.contenedor .separador .col {
+.contenedor .col {
   margin-bottom: 1em;
 }
 
