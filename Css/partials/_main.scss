@@ -1,9 +1,16 @@
 .contenedor {
   background-size: 100%;
+
   background-image: url("../../Img/background.jpg");
   .separador {
     height: 1em;
     background-image: url("../../Img/separador-kada-01-2.svg");
+
+  background-image: url("Img/background.jpg");
+  .separador {
+    height: 1em;
+    background-image: url("Img/separador-kada-01-2.svg");
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,4 +58,5 @@
   .col{
     margin-bottom: 1em;    
   } 
+}
 }
