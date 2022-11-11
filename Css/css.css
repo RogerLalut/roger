@@ -17,16 +17,16 @@
   height: 9em;
 }
 .header .navbar-toggler-icon {
-  background-image: url("/Img/crossbones.png");
+  background-image: url("./Img/crossbones.png");
 }
 
 .contenedor {
   background-size: 100%;
-  background-image: url("../../Img/background.jpg");
+  background-image: url("../Img/background.jpg");
 }
 .contenedor .separador {
   height: 1em;
-  background-image: url("../../Img/separador-kada-01-2.svg");
+  background-image: url("../Img/separador-kada-01-2.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
