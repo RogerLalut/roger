@@ -53,7 +53,7 @@ const productos = [
     nombre: "A NIGHT AT THE OPERA",
     precio: 30000,
     cantidad: 1,
-    img: ".Img/queen2.jpg",
+    img: "./Img/queen2.jpg",
   },
   {
     id: 9,
