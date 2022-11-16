@@ -10,6 +10,8 @@
     <link rel="icon" sizes="70x70" href="./Img/heavy-metal.png">
     <link rel="stylesheet" href="./Css/css.css">
     <script src="https://kit.fontawesome.com/05fc06680f.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Montserrat:wght@300&display=swap"
@@ -31,20 +33,11 @@
 
                 <div class="collapse navbar-collapse" id="menu">
                     <ul class="navbar-nav ms-auto m-2">
-                        <li class="nav-item ">
-                            <a class="nav-link" href="./index.html">Inicio</a>
-                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./Pag/poleras.html">Poleras</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./Pag/polerones.html">Polerones</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./Pag/musica.html">Música</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./Pag/accesorios.html">Accesorios</a>
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modal">
+                                <i class="fas fa-shopping-cart" id="carritoContenedor"></i>
+                                Carrito
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -53,137 +46,42 @@
     </header>
 
 
-
-    <main class="contenedor">
+    <main class="main">
         <section class="separador"></section>
+        <br>
+        <h1 class="encabezado text-center m-5">NUESTROS PRODUCTOS</h1>
+        <div id="contenedor" class="row mt-5"></div>
 
-
-        <div class="container">
-            <div class="row">
-                <div class="encabezado">
-                    <h1>TODO LO QUE BUSCAS ESTÁ AQUÍ.<br>
-                        NO LO TENEMOS? ENTONCES LO HACEMOS PARA TÍ <img src="./Img/maloik.png" alt="icon"></h1>
-                </div>
-            </div>
-        </div>
-
-        <div class="row1 container-fluid">
-            <br>
-            <br>
-            <h2>NECESITAS UN NUEVO ESTILO?</h2>
-            <h2>VISITA NUESTRO CATALOGO DE POLERAS Y POLERONES ACÁ</h2>
-            <br>
-            <div class="container container-cartas">
-                <div class="card mb-3 " style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="./Img/t-shirt_muestra-removebg-preview.png" class="img-fluid rounded-start"
-                                alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Poleras</h5>
-                                <p class="card-text">Revisa nuestro catálogo disponible, Mujer, Hombre y Niños.</p>
-                                <div><a href="./Pag/poleras.html"><button type="button"
-                                            class="btn btn-danger">Catálogo</button></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="./Img/poleron_muestra-removebg.png" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Polerones</h5>
-                                <p class="card-text">No quieres negro? revisa nuestra variedad de colores disponibles.
-                                </p>
-                                <div><a href="./Pag/polerones.html"><button type="button"
-                                            class="btn btn-danger">Catálogo</button></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Carousel -->
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-            <hr>
-            <!-- The slideshow/carousel -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./Img/rolling-stone-1.svg" alt="rolling stone" class="d-block">
-                </div>
-                <div class="carousel-item ">
-                    <img src="./Img/the-killers.svg" alt="the killers" class="d-block">
-                </div>
-                <div class="carousel-item ">
-                    <img src="./Img/iron-maiden-1.svg" alt="iron maiden" class="d-block">
-                </div>
-
-            </div>
-        </div>
-
-
-
-        <div class="row1 container-fluid">
-            <br>
-            <br>
-            <h2>TE FALTA ONDA Y ESTÁS ABURRIDO DE ESCUCHAR SIEMPRE LO MISMO?</h2>
-            <h2>REVISA NUESTRA SECCIÓN DE MUSICA Y ACCESORIOS</h2>
-            <br>
-            <div class="container container-cartas">
-                <div class="card mb-3 " style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="./Img/vinillo-muestra-removebg-preview.png" class="img-fluid rounded-start"
-                                alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Vinilos y CD's</h5>
-                                <p class="card-text">Te explotarán los oidos con nuestro catálogo.</p>
-                                <div><a href="./Pag/musica.html"><button type="button"
-                                            class="btn btn-danger">Catálogo</button></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="./Img/Parche.png" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Accesorios</h5>
-                                <p class="card-text">No te faltará estilo con estos accesorios.
-                                </p>
-                                <div><a href="./Pag/accesorios.html"><button type="button"
-                                            class="btn btn-danger">Catálogo</button></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-        </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="fin">
-                    <h1>SI NO ESTA AQUÍ, NO ESTA EN NINGÚN LADO</h1>
-                </div>
-            </div>
-        </div>
         <section class="separador"></section>
     </main>
+    <div class="container-xl">
+        <div class="modal" tabindex="-1" role="dialog" id="modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Carrito</h5>                        
+                    </div>
+
+                    <div class="modal-body"></div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" id="vaciarCarrito">
+                            Vaciar carrito
+                        </button>
+                        <button type="button" id="procesarCompra" class="btn btn-warning">
+                            Finalizar Compra
+                        </button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Cerrar
+                        </button>
+
+                        <span>Precio total:</span>
+                        <p class="text-center" id="precioTotal"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <footer class="bg-dark text-center text-white">
@@ -227,7 +125,5 @@
         <!-- Copyright -->
     </footer>
     <!-- End of .container -->
-    <script src="app.js"></script>
+    <script src="carrito.js"></script>
 </body>
-
-</html>
