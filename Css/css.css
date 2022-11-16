@@ -20,52 +20,27 @@
   background-image: url("/Img/crossbones.png");
 }
 
-.contenedor {
+.main {
   background-size: 100%;
   background-image: url("../Img/background.jpg");
 }
-.contenedor .separador {
+.main #carroDeCompras p {
+  color: tomato;
+}
+.main .separador {
   height: 1em;
   background-image: url("../Img/separador-kada-01-2.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.contenedor .container {
-  margin-top: 5em;
+.main #contenedor {
+  justify-content: space-around;
 }
-.contenedor .container .encabezado {
-  color: #D4AC0D;
+.main h1 {
+  color: tomato;
 }
-.contenedor .container .encabezado img {
-  height: 50px;
-  margin-bottom: 20px;
-}
-.contenedor .container .fin {
-  color: #C0392B;
-  text-align: center;
-  margin: 1em;
-}
-.contenedor .row1 {
-  margin-top: 3em;
-  text-align: center;
-  background: rgba(46, 64, 83, 0.5);
-  color: white;
-}
-.contenedor .row1 .container-cartas {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1em;
-  padding-bottom: 1em;
-}
-.contenedor .row1 .container-cartas .card {
-  background: rgba(46, 64, 83, 0.5);
-}
-.contenedor .carousel-inner img {
-  width: 100%;
-  height: 10em;
-}
-.contenedor .col {
+.main .col {
   margin-bottom: 1em;
 }
 
@@ -75,4 +50,13 @@
   margin: 0;
   font-family: "Allerta Stencil", sans-serif;
   letter-spacing: 0.0625rem;
+}
+
+.contenedor-carrito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenedor-carrito img {
+  height: 17em;
 }/*# sourceMappingURL=css.css.map */
